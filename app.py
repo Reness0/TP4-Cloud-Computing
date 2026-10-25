@@ -1,10 +1,10 @@
 from flask import Flask
 
-app = Flask(name)
+app = Flask(_name_)
 
-@app.route('/')
+@app.route("/")
 def home():
-    return "Bonjour ! Mon TP4 Cloud Computing fonctionne."
-
-if name == 'main':
-    app.run()
+    return """
+        <h1>Cloud Computing Lab - PaaS</h1>
+        <p>This application is deployed using a Platform as a Service.</p>
+        """
